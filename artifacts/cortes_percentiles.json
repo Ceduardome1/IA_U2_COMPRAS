@@ -1,0 +1,20 @@
+{
+    "ProductRelated": {
+        "p33": 10.0,
+        "p67": 29.0,
+        "etiquetas": [
+            "bajo",
+            "medio",
+            "alto"
+        ]
+    },
+    "ProductRelated_Duration": {
+        "p33": 285.9328,
+        "p67": 1107.2274169,
+        "etiquetas": [
+            "bajo",
+            "medio",
+            "alto"
+        ]
+    }
+}
