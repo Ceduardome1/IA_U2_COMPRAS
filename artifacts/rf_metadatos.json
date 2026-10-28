@@ -1,0 +1,33 @@
+{
+    "modelo": "RandomForestClassifier",
+    "hiperparametros": {
+        "n_estimators": 150,
+        "max_depth": 8,
+        "min_samples_split": 10,
+        "min_samples_leaf": 5,
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": -1
+    },
+    "tiempo_entrenamiento_seg": 0.24825263023376465,
+    "caracteristicas": [
+        "ProductRelated",
+        "ProductRelated_Duration",
+        "VisitorType_Returning_Visitor",
+        "VisitorType_New_Visitor",
+        "VisitorType_Other"
+    ],
+    "importancia_caracteristicas": {
+        "ProductRelated": 0.33174178325652237,
+        "ProductRelated_Duration": 0.566875515364798,
+        "VisitorType_Returning_Visitor": 0.051461106761379986,
+        "VisitorType_New_Visitor": 0.04724608601329383,
+        "VisitorType_Other": 0.002675508604005884
+    },
+    "cv_5fold": {
+        "f1_mean": 0.34907544991521355,
+        "recall_mean": 0.7595049823207971,
+        "precision_mean": 0.22669302697718624,
+        "roc_auc_mean": 0.7002462056238357
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "modelo": "MLPClassifier",
+    "arquitectura": {
+        "nodos_entrada": 5,
+        "capas_ocultas": [
+            32,
+            16
+        ],
+        "nodos_salida": 2,
+        "activacion": "relu",
+        "optimizador": "adam"
+    },
+    "hiperparametros": {
+        "alpha": 0.01,
+        "learning_rate_init": 0.005,
+        "early_stopping": true,
+        "n_iter_no_change": 10,
+        "validation_fraction": 0.15
+    },
+    "entrenamiento": {
+        "tiempo_segundos": 0.1556689739227295,
+        "epocas_convergidas": 12,
+        "perdida_final": 0.3944118006067503,
+        "mejor_score_validacion": 0.8452702702702702,
+        "roc_auc_train": 0.6902610291840763,
+        "curva_perdida": [
+            0.47892113716144186,
+            0.4027974095624257,
+            0.39950619861831943,
+            0.39769344160661924,
+            0.3960377403967936,
+            0.3952054709015981,
+            0.39474086549885895,
+            0.39499827354600914,
+            0.3940907271922088,
+            0.3941102024646647,
+            0.3939550678205711,
+            0.3944118006067503
+        ],
+        "curva_validacion": [
+            0.8452702702702702,
+            0.8452702702702702,
+            0.8452702702702702,
+            0.8452702702702702,
+            0.8452702702702702,
+            0.8452702702702702,
+            0.8452702702702702,
+            0.8452702702702702,
+            0.8452702702702702,
+            0.8452702702702702,
+            0.8452702702702702,
+            0.8452702702702702
+        ]
+    },
+    "caracteristicas": [
+        "ProductRelated",
+        "ProductRelated_Duration",
+        "VisitorType_Returning_Visitor",
+        "VisitorType_New_Visitor",
+        "VisitorType_Other"
+    ]
+}
