@@ -9,15 +9,15 @@ class BayesApp:
         self.root.title("Apartado 2: Teorema de Bayes por Conteos")
         self.root.geometry("800x600")
 
-        ruta_datos = os.path.join("..", "data", "train_numerico.csv")
+        ruta_datos = os.path.join("..", "data", "train_categorico.csv")
         try:
             self.df = pd.read_csv(ruta_datos)
         except FileNotFoundError:
-            ruta_datos = os.path.join("data", "train_numerico.csv")
+            ruta_datos = os.path.join("data", "train_categorico.csv")
             try:
                 self.df = pd.read_csv(ruta_datos)
             except FileNotFoundError:
-                tk.Label(self.root, text="Error: No se encontró train_numerico.csv").pack()
+                tk.Label(self.root, text="Error: No se encontró train_categorico.csv").pack()
                 return
 
         self.calcular_probabilidades()
