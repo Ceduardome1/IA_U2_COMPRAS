@@ -1,0 +1,10 @@
+Variable,Categoria,Conteo_No_Compra,Conteo_Compra,Total,Prob_Empirica_No_Compra,Prob_Empirica_Compra,Prob_Laplace_No_Compra,Prob_Laplace_Compra,Razon_Verosimilitud,Impacto
+VisitorType,New_Visitor,1014,333,1347,0.121612,0.218218,0.121688,0.218443,1.7951,Favorece Compra (+)
+VisitorType,Other,61,13,74,0.007316,0.008519,0.007433,0.009156,1.2318,Favorece Compra (+)
+VisitorType,Returning_Visitor,7263,1180,8443,0.871072,0.773263,0.870879,0.7724,0.8869,Favorece No Compra (-)
+ProductRelated,alto,2493,744,3237,0.298993,0.487549,0.299005,0.487247,1.6296,Favorece Compra (+)
+ProductRelated,bajo,3125,227,3352,0.37479,0.148755,0.374775,0.149117,0.3979,Favorece No Compra (-)
+ProductRelated,medio,2720,555,3275,0.326217,0.363696,0.32622,0.363636,1.1147,Favorece Compra (+)
+ProductRelated_Duration,alto,2486,769,3255,0.298153,0.503932,0.298166,0.503597,1.689,Favorece Compra (+)
+ProductRelated_Duration,bajo,3088,167,3255,0.370353,0.109436,0.370339,0.109876,0.2967,Favorece No Compra (-)
+ProductRelated_Duration,medio,2764,590,3354,0.331494,0.386632,0.331495,0.386527,1.166,Favorece Compra (+)

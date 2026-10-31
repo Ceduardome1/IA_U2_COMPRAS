@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-gui_rf.py
+rf.py
 Tipo: INTERFAZ GRÁFICA (GUI)
 Módulo: Random Forest - Diagnóstico e Inferencia Interactiva
 
@@ -62,7 +62,7 @@ class VentanaRandomForest(tk.Tk):
             messagebox.showwarning(
                 "Modelo no encontrado",
                 "No se encontraron los artefactos de Random Forest.\n"
-                "Ejecuta en consola: python src/modelosML/randoomForest/02_cli_entrenar_rf.py"
+                "Ejecuta en consola: python src/modelosML/randoomForest/cli_entrenar_rf.py"
             )
 
     def crear_widgets(self):

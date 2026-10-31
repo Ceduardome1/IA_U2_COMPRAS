@@ -1,0 +1,271 @@
+{
+    "metadatos": {
+        "fecha_generacion": "2026-10-30T09:56:39.793846",
+        "dataset_origen": "/mnt/datos/Code/Pyton/IA/U2/Final/data/train_categorico.csv",
+        "total_muestras_train": 9864,
+        "conteo_revenue_false": 8338,
+        "conteo_revenue_true": 1526,
+        "priors_empiricos": {
+            "False": 0.845296,
+            "True": 0.154704
+        },
+        "priors_laplace": {
+            "False": 0.845226,
+            "True": 0.154774
+        },
+        "variables_incluidas": [
+            "VisitorType",
+            "ProductRelated",
+            "ProductRelated_Duration"
+        ],
+        "cardinalidades": {
+            "VisitorType": 3,
+            "ProductRelated": 3,
+            "ProductRelated_Duration": 3
+        }
+    },
+    "cpt": {
+        "VisitorType": {
+            "New_Visitor": {
+                "conteo_false": 1014,
+                "conteo_true": 333,
+                "conteo_total": 1347,
+                "k_categorias": 3,
+                "prob_empirica_false": 0.121612,
+                "prob_empirica_true": 0.218218,
+                "prob_laplace_false": 0.121688,
+                "prob_laplace_true": 0.218443,
+                "razon_verosimilitud": 1.7951,
+                "log_odds": 0.5851,
+                "impacto": "Favorece Compra (+)"
+            },
+            "Other": {
+                "conteo_false": 61,
+                "conteo_true": 13,
+                "conteo_total": 74,
+                "k_categorias": 3,
+                "prob_empirica_false": 0.007316,
+                "prob_empirica_true": 0.008519,
+                "prob_laplace_false": 0.007433,
+                "prob_laplace_true": 0.009156,
+                "razon_verosimilitud": 1.2318,
+                "log_odds": 0.2085,
+                "impacto": "Favorece Compra (+)"
+            },
+            "Returning_Visitor": {
+                "conteo_false": 7263,
+                "conteo_true": 1180,
+                "conteo_total": 8443,
+                "k_categorias": 3,
+                "prob_empirica_false": 0.871072,
+                "prob_empirica_true": 0.773263,
+                "prob_laplace_false": 0.870879,
+                "prob_laplace_true": 0.7724,
+                "razon_verosimilitud": 0.8869,
+                "log_odds": -0.12,
+                "impacto": "Favorece No Compra (-)"
+            }
+        },
+        "ProductRelated": {
+            "alto": {
+                "conteo_false": 2493,
+                "conteo_true": 744,
+                "conteo_total": 3237,
+                "k_categorias": 3,
+                "prob_empirica_false": 0.298993,
+                "prob_empirica_true": 0.487549,
+                "prob_laplace_false": 0.299005,
+                "prob_laplace_true": 0.487247,
+                "razon_verosimilitud": 1.6296,
+                "log_odds": 0.4883,
+                "impacto": "Favorece Compra (+)"
+            },
+            "bajo": {
+                "conteo_false": 3125,
+                "conteo_true": 227,
+                "conteo_total": 3352,
+                "k_categorias": 3,
+                "prob_empirica_false": 0.37479,
+                "prob_empirica_true": 0.148755,
+                "prob_laplace_false": 0.374775,
+                "prob_laplace_true": 0.149117,
+                "razon_verosimilitud": 0.3979,
+                "log_odds": -0.9216,
+                "impacto": "Favorece No Compra (-)"
+            },
+            "medio": {
+                "conteo_false": 2720,
+                "conteo_true": 555,
+                "conteo_total": 3275,
+                "k_categorias": 3,
+                "prob_empirica_false": 0.326217,
+                "prob_empirica_true": 0.363696,
+                "prob_laplace_false": 0.32622,
+                "prob_laplace_true": 0.363636,
+                "razon_verosimilitud": 1.1147,
+                "log_odds": 0.1086,
+                "impacto": "Favorece Compra (+)"
+            }
+        },
+        "ProductRelated_Duration": {
+            "alto": {
+                "conteo_false": 2486,
+                "conteo_true": 769,
+                "conteo_total": 3255,
+                "k_categorias": 3,
+                "prob_empirica_false": 0.298153,
+                "prob_empirica_true": 0.503932,
+                "prob_laplace_false": 0.298166,
+                "prob_laplace_true": 0.503597,
+                "razon_verosimilitud": 1.689,
+                "log_odds": 0.5241,
+                "impacto": "Favorece Compra (+)"
+            },
+            "bajo": {
+                "conteo_false": 3088,
+                "conteo_true": 167,
+                "conteo_total": 3255,
+                "k_categorias": 3,
+                "prob_empirica_false": 0.370353,
+                "prob_empirica_true": 0.109436,
+                "prob_laplace_false": 0.370339,
+                "prob_laplace_true": 0.109876,
+                "razon_verosimilitud": 0.2967,
+                "log_odds": -1.2151,
+                "impacto": "Favorece No Compra (-)"
+            },
+            "medio": {
+                "conteo_false": 2764,
+                "conteo_true": 590,
+                "conteo_total": 3354,
+                "k_categorias": 3,
+                "prob_empirica_false": 0.331494,
+                "prob_empirica_true": 0.386632,
+                "prob_laplace_false": 0.331495,
+                "prob_laplace_true": 0.386527,
+                "razon_verosimilitud": 1.166,
+                "log_odds": 0.1536,
+                "impacto": "Favorece Compra (+)"
+            }
+        }
+    },
+    "tabla_plana": [
+        {
+            "Variable": "VisitorType",
+            "Categoria": "New_Visitor",
+            "Conteo_No_Compra": 1014,
+            "Conteo_Compra": 333,
+            "Total": 1347,
+            "Prob_Empirica_No_Compra": 0.121612,
+            "Prob_Empirica_Compra": 0.218218,
+            "Prob_Laplace_No_Compra": 0.121688,
+            "Prob_Laplace_Compra": 0.218443,
+            "Razon_Verosimilitud": 1.7951,
+            "Impacto": "Favorece Compra (+)"
+        },
+        {
+            "Variable": "VisitorType",
+            "Categoria": "Other",
+            "Conteo_No_Compra": 61,
+            "Conteo_Compra": 13,
+            "Total": 74,
+            "Prob_Empirica_No_Compra": 0.007316,
+            "Prob_Empirica_Compra": 0.008519,
+            "Prob_Laplace_No_Compra": 0.007433,
+            "Prob_Laplace_Compra": 0.009156,
+            "Razon_Verosimilitud": 1.2318,
+            "Impacto": "Favorece Compra (+)"
+        },
+        {
+            "Variable": "VisitorType",
+            "Categoria": "Returning_Visitor",
+            "Conteo_No_Compra": 7263,
+            "Conteo_Compra": 1180,
+            "Total": 8443,
+            "Prob_Empirica_No_Compra": 0.871072,
+            "Prob_Empirica_Compra": 0.773263,
+            "Prob_Laplace_No_Compra": 0.870879,
+            "Prob_Laplace_Compra": 0.7724,
+            "Razon_Verosimilitud": 0.8869,
+            "Impacto": "Favorece No Compra (-)"
+        },
+        {
+            "Variable": "ProductRelated",
+            "Categoria": "alto",
+            "Conteo_No_Compra": 2493,
+            "Conteo_Compra": 744,
+            "Total": 3237,
+            "Prob_Empirica_No_Compra": 0.298993,
+            "Prob_Empirica_Compra": 0.487549,
+            "Prob_Laplace_No_Compra": 0.299005,
+            "Prob_Laplace_Compra": 0.487247,
+            "Razon_Verosimilitud": 1.6296,
+            "Impacto": "Favorece Compra (+)"
+        },
+        {
+            "Variable": "ProductRelated",
+            "Categoria": "bajo",
+            "Conteo_No_Compra": 3125,
+            "Conteo_Compra": 227,
+            "Total": 3352,
+            "Prob_Empirica_No_Compra": 0.37479,
+            "Prob_Empirica_Compra": 0.148755,
+            "Prob_Laplace_No_Compra": 0.374775,
+            "Prob_Laplace_Compra": 0.149117,
+            "Razon_Verosimilitud": 0.3979,
+            "Impacto": "Favorece No Compra (-)"
+        },
+        {
+            "Variable": "ProductRelated",
+            "Categoria": "medio",
+            "Conteo_No_Compra": 2720,
+            "Conteo_Compra": 555,
+            "Total": 3275,
+            "Prob_Empirica_No_Compra": 0.326217,
+            "Prob_Empirica_Compra": 0.363696,
+            "Prob_Laplace_No_Compra": 0.32622,
+            "Prob_Laplace_Compra": 0.363636,
+            "Razon_Verosimilitud": 1.1147,
+            "Impacto": "Favorece Compra (+)"
+        },
+        {
+            "Variable": "ProductRelated_Duration",
+            "Categoria": "alto",
+            "Conteo_No_Compra": 2486,
+            "Conteo_Compra": 769,
+            "Total": 3255,
+            "Prob_Empirica_No_Compra": 0.298153,
+            "Prob_Empirica_Compra": 0.503932,
+            "Prob_Laplace_No_Compra": 0.298166,
+            "Prob_Laplace_Compra": 0.503597,
+            "Razon_Verosimilitud": 1.689,
+            "Impacto": "Favorece Compra (+)"
+        },
+        {
+            "Variable": "ProductRelated_Duration",
+            "Categoria": "bajo",
+            "Conteo_No_Compra": 3088,
+            "Conteo_Compra": 167,
+            "Total": 3255,
+            "Prob_Empirica_No_Compra": 0.370353,
+            "Prob_Empirica_Compra": 0.109436,
+            "Prob_Laplace_No_Compra": 0.370339,
+            "Prob_Laplace_Compra": 0.109876,
+            "Razon_Verosimilitud": 0.2967,
+            "Impacto": "Favorece No Compra (-)"
+        },
+        {
+            "Variable": "ProductRelated_Duration",
+            "Categoria": "medio",
+            "Conteo_No_Compra": 2764,
+            "Conteo_Compra": 590,
+            "Total": 3354,
+            "Prob_Empirica_No_Compra": 0.331494,
+            "Prob_Empirica_Compra": 0.386632,
+            "Prob_Laplace_No_Compra": 0.331495,
+            "Prob_Laplace_Compra": 0.386527,
+            "Razon_Verosimilitud": 1.166,
+            "Impacto": "Favorece Compra (+)"
+        }
+    ]
+}

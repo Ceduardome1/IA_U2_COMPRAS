@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-02_cli_entrenar_rf.py
+cli_entrenar_rf.py
 Tipo: LÍNEA DE COMANDOS (CLI)
 Entregable: Apartado 4 / 5 - Entrenamiento de Random Forest
 

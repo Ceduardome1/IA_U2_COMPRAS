@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-gui_mlp.py
+mlp.py
 Tipo: INTERFAZ GRÁFICA (GUI)
 Módulo: Perceptrón Multicapa (MLP) - Arquitectura, Pérdida e Inferencia
 
@@ -65,7 +65,7 @@ class VentanaMLP(tk.Tk):
             messagebox.showwarning(
                 "Artefactos no encontrados",
                 "No se encontraron los artefactos del MLP.\n"
-                "Ejecuta en consola: python src/modelosML/mLP/03_cli_entrenar_mlp.py"
+                "Ejecuta en consola: python src/modelosML/mLP/cli_entrenar_mlp.py"
             )
 
     def crear_widgets(self):

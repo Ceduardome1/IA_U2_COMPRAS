@@ -12,54 +12,90 @@ Ejecutar en orden secuencial para generar los datos y modelos necesarios:
    ```bash
    python src/util/00_reset_entorno.py
    ```
-2. **Preparación y Transformación de Datos**:
+2. **Inspección Exploratoria por Consola (Apartado 1)**:
+   ```bash
+   python src/analisisDatos/cli_resumen_datos.py
+   ```
+3. **Preparación y Transformación de Datos**:
    ```bash
    python src/util/01_cli_preparar_datos.py
    ```
-3. **Cálculo de Bayes por Conteos**:
+4. **Cálculo de Bayes por Conteos**:
    ```bash
-   python src/bayes/cli_02_teorema_bayes.py
+   python src/bayes/cli_teorema_bayes.py
    ```
-4. **Construcción de Red Naive Bayes y Tablas Laplace**:
+5. **Construcción de Red Naive Bayes y Tablas Laplace**:
    ```bash
-   python src/redBayesiana/cli_03_red_naive_bayes.py
+   python src/redBayesiana/cli_pipeline_red_naive_bayes.py
    ```
-5. **Entrenamiento Random Forest**:
+6. **Entrenamiento Random Forest**:
    ```bash
-   python src/modelosML/randoomForest/02_cli_entrenar_rf.py
+   python src/modelosML/randoomForest/cli_entrenar_rf.py
    ```
-6. **Entrenamiento MLP con Early Stopping**:
+7. **Entrenamiento MLP con Early Stopping**:
    ```bash
-   python src/modelosML/mLP/03_cli_entrenar_mlp.py
+   python src/modelosML/mLP/cli_entrenar_mlp.py
    ```
-7. **Evaluación Comparativa en Test (Umbral 0.50)**:
+8. **Evaluación Comparativa en Test (Umbral 0.50)**:
    ```bash
-   python src/comparacion/04_cli_evaluar_todos.py
+   python src/comparacion/cli_evaluar_todos.py
    ```
 
 ---
 
-## 2. Módulos Visuales Autónomos (GUI)
+## 2. Lanzador Maestro y Módulos Visuales (GUI)
+
+### 🌟 Panel Maestro de Navegación (Recomendado)
+Permite navegar y lanzar visualmente todas las interfaces del proyecto desde una sola ventana:
+```bash
+python src/main_dashboard.py
+# O su alias directo:
+python src/main.py
+```
+
+---
+
+### Módulos Visuales Autónomos por Apartado
 
 Cada interfaz es independiente y puede ejecutarse por separado:
 
-* **Apartado 1 (Jaime): Exploración y Mapa Conceptual**:
-  ```bash
-  python src/analisisDatos/gui_01_exploracion_mapa.py
-  ```
+* **Apartado 1 (Jaime / Cesar): Exploración de Datos y Mapa Conceptual**:
+  - **Mapa Conceptual Dedicado (NetworkX)**:
+    ```bash
+    python src/analisisDatos/mapa_conceptual.py
+    ```
+  - **Distribución de Datos Dedicada**:
+    ```bash
+    python src/analisisDatos/distribucion_datos.py
+    ```
+  - **Panel Integrado (Ambas Vistas y Lanzadores)**:
+    ```bash
+    python src/analisisDatos/exploracion_mapa.py
+    ```
+
 * **Apartado 2 (Jaime): Teorema de Bayes por Conteos**:
   ```bash
-  python src/bayes/gui_02_teorema_bayes.py
+  python src/bayes/teorema_bayes.py
   ```
+
 * **Apartado 3 (Jaime): Grafo Naive Bayes y Tablas CPT con Laplace**:
+  *(Incluye persistencia JSON/CSV y Visor de Matriz CPT Completa)*
   ```bash
-  python src/redBayesiana/gui_03_red_naive_bayes.py
+  python src/redBayesiana/red_naive_bayes.py
   ```
+
 * **Apartado 4 (Demostración): Consultas Progresivas y Casos de Prueba**:
   ```bash
-  python src/redBayesiana/gui_04_consultas_demostracion.py
+  python src/redBayesiana/consultas_demostracion.py
   ```
-* **Apartado 5 (Cesar): Comparativa Final y Matrices de Confusión**:
-  ```bash
-  python src/comparacion/gui_05_comparativa_modelos.py
-  ```
+  *(Clasificador complementario simple: `python src/redBayesiana/gui_04_clasificador_bayes.py`)*
+
+* **Apartado 5 (Cesar): Comparativa Final y Evaluación**:
+  - **Panel Comparativo y Matrices de Confusión Heatmaps**:
+    ```bash
+    python src/comparacion/comparativa_modelos.py
+    ```
+  - **Comparador Multimodelo en Vivo (Manejo de Evidencia Incompleta)**:
+    ```bash
+    python src/comparacion/gui_comparativa_predicciones.py
+    ```

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-03_cli_entrenar_mlp.py
+cli_entrenar_mlp.py
 Tipo: LÍNEA DE COMANDOS (CLI)
 Entregable: Apartado 4 / 5 - Entrenamiento de Perceptrón Multicapa (MLP) con Early Stopping
 

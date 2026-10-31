@@ -1,0 +1,62 @@
+{
+    "Naive Bayes": {
+        "modelo": "Naive Bayes",
+        "umbral": 0.5,
+        "tiempo_inferencia_ms": 39.04,
+        "exactitud": 0.8451,
+        "precision": 0.0,
+        "sensibilidad": 0.0,
+        "f1_score": 0.0,
+        "matriz_confusion": {
+            "TN": 2084,
+            "FP": 0,
+            "FN": 382,
+            "TP": 0
+        }
+    },
+    "Random Forest": {
+        "modelo": "Random Forest",
+        "umbral": 0.5,
+        "tiempo_inferencia_ms": 44.88,
+        "exactitud": 0.5454,
+        "precision": 0.2199,
+        "sensibilidad": 0.7592,
+        "f1_score": 0.341,
+        "matriz_confusion": {
+            "TN": 1055,
+            "FP": 1029,
+            "FN": 92,
+            "TP": 290
+        }
+    },
+    "Perceptrón Multicapa (MLP)": {
+        "modelo": "Perceptrón Multicapa (MLP)",
+        "umbral": 0.5,
+        "tiempo_inferencia_ms": 0.85,
+        "exactitud": 0.8447,
+        "precision": 0.0,
+        "sensibilidad": 0.0,
+        "f1_score": 0.0,
+        "matriz_confusion": {
+            "TN": 2083,
+            "FP": 1,
+            "FN": 382,
+            "TP": 0
+        }
+    },
+    "Referencia Base (Mayoritaria)": {
+        "modelo": "Referencia Base (Mayoritaria)",
+        "umbral": 0.5,
+        "tiempo_inferencia_ms": 0.0,
+        "exactitud": 0.8451,
+        "precision": 0.0,
+        "sensibilidad": 0.0,
+        "f1_score": 0.0,
+        "matriz_confusion": {
+            "TN": 2084,
+            "FP": 0,
+            "FN": 382,
+            "TP": 0
+        }
+    }
+}
