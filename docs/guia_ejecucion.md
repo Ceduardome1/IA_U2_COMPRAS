@@ -88,7 +88,7 @@ Cada interfaz es independiente y puede ejecutarse por separado:
   ```bash
   python src/redBayesiana/consultas_demostracion.py
   ```
-  *(Clasificador complementario simple: `python src/redBayesiana/gui_04_clasificador_bayes.py`)*
+  *(Clasificador complementario interactivo: `python src/redBayesiana/clasificador_bayes.py`)*
 
 * **Apartado 5 (Cesar): Comparativa Final y Evaluación**:
   - **Panel Comparativo y Matrices de Confusión Heatmaps**:

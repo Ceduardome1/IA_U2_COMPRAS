@@ -2,7 +2,7 @@
     "Naive Bayes": {
         "modelo": "Naive Bayes",
         "umbral": 0.5,
-        "tiempo_inferencia_ms": 39.04,
+        "tiempo_inferencia_ms": 42.15,
         "exactitud": 0.8451,
         "precision": 0.0,
         "sensibilidad": 0.0,
@@ -17,7 +17,7 @@
     "Random Forest": {
         "modelo": "Random Forest",
         "umbral": 0.5,
-        "tiempo_inferencia_ms": 44.88,
+        "tiempo_inferencia_ms": 44.04,
         "exactitud": 0.5454,
         "precision": 0.2199,
         "sensibilidad": 0.7592,
@@ -32,7 +32,7 @@
     "Perceptrón Multicapa (MLP)": {
         "modelo": "Perceptrón Multicapa (MLP)",
         "umbral": 0.5,
-        "tiempo_inferencia_ms": 0.85,
+        "tiempo_inferencia_ms": 1.14,
         "exactitud": 0.8447,
         "precision": 0.0,
         "sensibilidad": 0.0,

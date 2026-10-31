@@ -18,7 +18,7 @@
         "validation_fraction": 0.15
     },
     "entrenamiento": {
-        "tiempo_segundos": 0.1556689739227295,
+        "tiempo_segundos": 0.13738036155700684,
         "epocas_convergidas": 12,
         "perdida_final": 0.3944118006067503,
         "mejor_score_validacion": 0.8452702702702702,

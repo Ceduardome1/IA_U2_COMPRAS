@@ -1,6 +1,6 @@
 {
     "metadatos": {
-        "fecha_generacion": "2026-10-30T09:56:39.793846",
+        "fecha_generacion": "2026-10-31T11:54:10.406090",
         "dataset_origen": "/mnt/datos/Code/Pyton/IA/U2/Final/data/train_categorico.csv",
         "total_muestras_train": 9864,
         "conteo_revenue_false": 8338,
